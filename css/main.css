@@ -1,0 +1,141 @@
+@import url("../css/owl.carousel.css");
+@import url("../css/owl.theme.css");
+@import url("../css/animate.css");
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+@font-face {
+  font-family: RobotoSlabRegular;
+  src: url(../fonts/Roboto%20Slab%20Regular.ttf);
+}
+@font-face {
+  font-family: RobotoSlabBold;
+  src: url(../fonts/Roboto%20Slab%20Bold.ttf);
+}
+@font-face {
+  src: url(../fonts/glyphicons-halflings-regular.ttf);
+  src: url(../fonts/glyphicons-halflings-regular.eot);
+  src: url(../fonts/glyphicons-halflings-regular.woff);
+}
+header .navbar {
+  padding: 20px 0;
+  background: #494949;
+  box-shadow: 0px 0px 30px 0px #ffffff;
+}
+header .navbar .brand {
+  font-family: 'Lobster', cursive;
+  color: #199dcd;
+  font-size: 36px;
+  padding-left: 0;
+}
+header .navbar .navbar-toggle {
+  background-color: #199dcd;
+}
+header .navbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+header .navbar .collapse {
+  float: right;
+}
+header .navbar .nav {
+  display: inline-block;
+  float: right;
+  line-height: 3;
+}
+header .navbar .nav li {
+  display: inline-block;
+  padding: 0 7px;
+}
+header .navbar .nav li a {
+  font-size: 16px;
+  color: #b3b3b3;
+  line-height: 2;
+  padding: 10px 20px;
+}
+header .navbar .nav li :hover {
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
+  box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
+  color: #fff;
+  background: #0f8dc2;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBmOGRjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZWI2ZmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0f8dc2), color-stop(100%, #0eb6fd));
+  background: -webkit-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: -o-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: -ms-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: linear-gradient(to bottom, #0f8dc2 0%, #0eb6fd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f8dc2', endColorstr='#0eb6fd', GradientType=0);
+}
+header .navbar .nav li :focus {
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
+  box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
+  color: #fff;
+  background: #0f8dc2;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBmOGRjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZWI2ZmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0f8dc2), color-stop(100%, #0eb6fd));
+  background: -webkit-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: -o-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: -ms-linear-gradient(top, #0f8dc2 0%, #0eb6fd 100%);
+  background: linear-gradient(to bottom, #0f8dc2 0%, #0eb6fd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f8dc2', endColorstr='#0eb6fd', GradientType=0);
+}
+section {
+  padding: 10px;
+}
+.name-block {
+  font-size: 20px;
+  color: #199dcd;
+  font-weight: bold;
+}
+/*============= main ==============*/
+.main {
+  background: #fff;
+  margin-top: 115px;
+}
+.main .owl-carousel img {
+  height: 400px;
+  width: 100%;
+}
+/*==================================*/
+/*============= price ==============*/
+.price {
+  background: #fff;
+  margin-top: 28px;
+}
+.price .glyphicon {
+  top: 3px;
+  padding-right: 10px;
+}
+.price a {
+  text-decoration: none;
+}
+.price .panel p {
+  text-align: center;
+  padding-top: 10px;
+}
+/*==================================*/
+/*============= about ==============*/
+.about {
+  min-height: 700px;
+  background: #fff;
+  margin-top: 28px;
+}
+/*==================================*/
+/*============= contacts ==============*/
+.contacts {
+  min-height: 700px;
+  background: #fff;
+  margin-top: 28px;
+}
+/*==================================*/
+body {
+  background: url("../img/bg-body.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: RobotoSlabRegular;
+}
