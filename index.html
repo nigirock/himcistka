@@ -1,17 +1,299 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Химчистка</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-    <link rel="stylesheet" type="text/css" href="">
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
+<div class="container">
+    <!-- =========header========== -->
+    <header>
+        <nav class="navbar navbar-fixed-top container">
+            <div class="navbar-inner col-md-12">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand col-md-4 col-sm-3" href="#">Химчистка</a>
+                <div class="col-md-8 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#sec-main" rel='m_PageScroll2id'>Главная</a></li>
+                        <li><a href="#sec-1" rel='m_PageScroll2id'>Цены</a></li>
+                        <li><a href="#sec-2" rel='m_PageScroll2id'>О нас</a></li>
+                        <li><a href="#sec-3" rel='m_PageScroll2id'>Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ============================ -->
+    <section id="sec-main" class="row main">
+        <h4 class="name-block">Главная</h4>
+        <div>
+            Химчистка авто, диванов, ковров, мягкой и кожаной мебели(диван,стулья,пуфики,матрас) на дому. Чистим детские коляски.Качественно. Недорого.Выезд мастера БЕСПЛАТНЫЙ.
+            г.Минск и Минский район
+        </div>
+        <div class="owl-carousel">
+            <div class="item"><img src="img/cover.jpg"></div>
+            <div class="item"><img src="img/cover.jpg"></div>
+            <div class="item"><img src="img/cover.jpg"></div>
+            <div class="item"><img src="img/cover.jpg"></div>
+        </div>
+    </section>
+    <section id="sec-1" class="row price">
+        <h4 class="name-block">Цены</h4>
 
+        <div class="panel-group" id="accordion">
+            <!-- 1 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 1 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-chevron-down"></span>1.Кресло</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <!-- Содержимое 1 панели -->
+                    <div class="panel-body">
+                        <img src="img/cover.jpg" alt="cover" class="img-responsive img-thumbnail">
+                        <p>1 шт. 80 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 2 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-chevron-down"></span>2.Стул</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <!-- Содержимое 2 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 60 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 3 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-chevron-down"></span>3.Пуф</a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <!-- Содержимое 3 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 40 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 4 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-chevron-down"></span>4.Диван двухместный</a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <!-- Содержимое 4 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 150 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 5 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><span class="glyphicon glyphicon-chevron-down"></span>5.Диван трехместный</a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <!-- Содержимое 5 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 250 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 6 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"><span class="glyphicon glyphicon-chevron-down"></span>6.Диван четырехместный угловой</a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                    <!-- Содержимое 6 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 350 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 7 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><span class="glyphicon glyphicon-chevron-down"></span>7.Диван пятиместный угловой</a>
+                    </h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse">
+                    <!-- Содержимое 7 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 430 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 8 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"><span class="glyphicon glyphicon-chevron-down"></span>8.Уголок кухонный</a>
+                    </h4>
+                </div>
+                <div id="collapseEight" class="panel-collapse collapse">
+                    <!-- Содержимое 8 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 150 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 9 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"><span class="glyphicon glyphicon-chevron-down"></span>9.Подушки диванные большие</a>
+                    </h4>
+                </div>
+                <div id="collapseNine" class="panel-collapse collapse">
+                    <!-- Содержимое 9 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 30 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 10 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 10 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen"><span class="glyphicon glyphicon-chevron-down"></span>10.Подушки диванные маленькие</a>
+                    </h4>
+                </div>
+                <div id="collapseTen" class="panel-collapse collapse">
+                    <!-- Содержимое 10 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 20 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 11 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 11 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven"><span class="glyphicon glyphicon-chevron-down"></span>11.Матрас (с двух сторон+боковины)</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <!-- Содержимое 11 панели -->
+                    <div class="panel-body">
+                        <p>1 шт.150 000-250 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 12 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 12 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve"><span class="glyphicon glyphicon-chevron-down"></span>12.Химчистка детской коляски</a>
+                    </h4>
+                </div>
+                <div id="collapseTwelve" class="panel-collapse collapse">
+                    <!-- Содержимое 12 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 100 000-150 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 13 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 13 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirty"><span class="glyphicon glyphicon-chevron-down"></span>13.Химчистка детского автокресла</a>
+                    </h4>
+                </div>
+                <div id="collapseThirty" class="panel-collapse collapse">
+                    <!-- Содержимое 13 панели -->
+                    <div class="panel-body">
+                        <p>1 шт. 100 000-150 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 14 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 14 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen"><span class="glyphicon glyphicon-chevron-down"></span>14.Химчистка салона автомобиля</a>
+                    </h4>
+                </div>
+                <div id="collapseFourteen" class="panel-collapse collapse">
+                    <!-- Содержимое 14 панели -->
+                    <div class="panel-body">
+                        <p>1 шт От 500 000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 15 панель -->
+            <div class="panel panel-default">
+                <!-- Заголовок 15 панели -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"><span class="glyphicon glyphicon-chevron-down"></span>15. Химчистка ковров</a>
+                    </h4>
+                </div>
+                <div id="collapseFifteen" class="panel-collapse collapse">
+                    <!-- Содержимое 15 панели -->
+                    <div class="panel-body">
+                        <p>25 000 - 35 000 за 1 кв. м.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-2" class="row about">
+        <h4 class="name-block">О нас</h4>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem similique unde? Assumenda at aut corporis dolores expedita incidunt nemo nisi, omnis pariatur possimus quasi quod tempore, tenetur vero voluptates!
+    </section>
+    <section id="sec-3" class="row contacts">
+        <h4 class="name-block">Контакты</h4>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto eos ipsam maxime mollitia quisquam velit, voluptates! Accusantium adipisci error fugit maxime, natus, neque nostrum pariatur quia quis reprehenderit sunt!
+    </section>
+</div>
 </body>
 <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+<script src="js/app.js"></script>
 </html>
