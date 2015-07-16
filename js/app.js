@@ -10,7 +10,7 @@ $( document ).ready(function() {
     owl.owlCarousel({
         items:1,
         margin:10,
-        loop:true,
+        loop:false,
         nav:true,
         animateOut: 'fadeInRight',
         animateIn: 'fadeIn',
