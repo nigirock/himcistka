@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var firstLi = $(".navbar-nav").children().first().addClass("focus");
+    var firstLi = $(".navbar-nav").children().first();
     console.dir(firstLi);
 
     var page = $("a[rel='m_PageScroll2id']");
@@ -14,7 +14,7 @@ $( document ).ready(function() {
         nav:true,
         animateOut: 'fadeInRight',
         animateIn: 'fadeIn',
-        autoPlay:false,
+        autoPlay:true,
         stopOnHover:true,
         paginationSpeed : 2000,
         rewindSpeed : 1000
