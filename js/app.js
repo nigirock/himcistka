@@ -17,6 +17,11 @@ $( document ).ready(function() {
         autoPlay:true,
         stopOnHover:true,
         paginationSpeed : 2000,
-        rewindSpeed : 1000
+        rewindSpeed : 1000,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
     });
 });

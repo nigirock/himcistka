@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  /*============= price ==============*/
+  .price {
+    background: #fff;
+    margin-top: 28px;
+  }
+  .price table {
+    width: 100%;
+  }
+  .price table caption {
+    font-size: 26px;
+  }
+  .price table img {
+    max-height: 200px;
+    text-align: left;
+  }
+  .price table th {
+    text-align: center;
+  }
+  .price table .price-table {
+    font-size: 22px;
+  }
+  .price table .two-row {
+    font-size: 18px;
+  }
+  /*==================================*/
+}
