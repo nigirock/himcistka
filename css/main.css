@@ -106,11 +106,14 @@ section {
 .price table {
   width: 100%;
 }
-.price table th {
+.price table caption {
+  font-size: 30px;
+}
+.price table img {
+  max-height: 280px;
   text-align: center;
 }
-.price table th img {
-  height: 320px;
+.price table th {
   text-align: center;
 }
 .price table .price-table {
