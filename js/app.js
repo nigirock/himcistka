@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
     var page = $("a[rel='m_PageScroll2id']");
         page.mPageScroll2id({
-            offset:120
+            offset:150
         });
     var owl = $('.owl-carousel');
     owl.owlCarousel({

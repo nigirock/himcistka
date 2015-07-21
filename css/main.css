@@ -20,10 +20,27 @@ header .navbar {
   background: #494949;
   box-shadow: 0px 0px 30px 0px #ffffff;
 }
+header .navbar a {
+  text-decoration: none;
+}
 header .navbar .brand {
-  color: #199dcd;
-  font-size: 36px;
   padding-left: 0;
+}
+header .navbar .brand img {
+  max-height: 95px;
+  float: left;
+}
+header .navbar .header-name h1 {
+  margin: 0;
+  text-align: center;
+  text-shadow: -2px 0px 15px #000000;
+  color: #199dcd;
+}
+header .navbar .header-name h2 {
+  margin: 0;
+  text-align: right;
+  text-shadow: -2px 0px 15px #000000;
+  color: #199dcd;
 }
 header .navbar .navbar-toggle {
   background-color: #199dcd;
@@ -37,7 +54,6 @@ header .navbar .collapse {
 header .navbar .nav {
   display: inline-block;
   float: right;
-  line-height: 3;
 }
 header .navbar .nav li {
   display: inline-block;
@@ -90,7 +106,7 @@ section {
 /*============= main ==============*/
 .main {
   background: #fff;
-  margin-top: 115px;
+  margin-top: 155px;
 }
 .main .owl-carousel {
   margin-top: 20px;
@@ -150,20 +166,49 @@ section {
   position: relative;
   margin-top: 35px;
 }
+.contacts .inner-contacts .soc-seti {
+  padding: 0;
+}
 .contacts .inner-contacts .soc-seti span {
   padding-left: 0;
 }
 .contacts .inner-contacts .soc-seti a {
-  background: url("../img/vk.png") no-repeat;
   height: 50px;
   width: 50px;
   position: absolute;
-  top: -15px;
-  left: 125px;
   opacity: 0.7;
+  top: -15px;
+  left: 135px;
 }
 .contacts .inner-contacts .soc-seti :hover {
   opacity: 1;
+}
+.contacts .inner-contacts .soc-seti .vk {
+  padding: 0;
+}
+.contacts .inner-contacts .soc-seti .vk a {
+  background: url("../img/vk.png") no-repeat;
+}
+.contacts .inner-contacts .soc-seti .fb a {
+  background: url("../img/fb.png") no-repeat;
+}
+.contacts .phone a {
+  padding-left: 90px;
+  color: #000;
+}
+.contacts .phone .mts span {
+  background: url("../img/mts-bank.png") no-repeat;
+  height: 50px;
+  width: 80px;
+  position: absolute;
+  top: -15px;
+}
+.contacts .phone .velcom span {
+  background: url("../img/velcom_logo.png") no-repeat;
+  height: 50px;
+  width: 80px;
+  position: absolute;
+  top: -15px;
 }
 /*==================================*/
 @media screen and (max-width: 991px) {
