@@ -16,20 +16,19 @@
     <!-- =========header========== -->
     <header>
         <nav class="navbar navbar-fixed-top container">
-            <div class="navbar-inner col-md-12">
+            <div class="navbar-inner col-md-12 col-sm-12 row">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand col-md-1 col-sm-3" href="#"><img src="img/logoSlon.png" alt="logo">
-                </a>
-                <div class="header-name col-md-3" >
+                <img src="img/logoSlon.png" alt="logo" class="brand col-md-1 col-sm-2 img-responsive">
+                <div class="header-name col-md-3 col-sm-3">
                     <h1 class="lobster">химчистка</h1></br>
                     <h2 class="lobster">"Чистый слон"</h2>
                 </div>
-                <div class="col-md-8 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="col-md-8 col-sm-7 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="#sec-main" rel='m_PageScroll2id'>Главная</a></li>
                         <li><a href="#sec-1" rel='m_PageScroll2id'>Цены</a></li>
@@ -231,24 +230,25 @@
         </table>
 
     </section>
-    <section id="sec-2" class="row about well">
+    <!-- ========== library ==============-->
+    <section id="sec-2" class="row library well">
         <h4 class="name-block page-header">Наши работы</h4>
-        <div class="inner-about">
+        <div class="inner-otzyvy">
             <div class="row col-lg-12 col-md-12">
-                <div><img src="img/rabota1.jpg" class="col-lg-4 col-md-4"></div>
-                <div><img src="img/rabota2.jpg" class="col-lg-4 col-md-4"></div>
-                <div><img src="img/rabota3.jpg" class="col-lg-4 col-md-4"></div>
+                <div><a href="img/rabota1.jpg" class="item-library"><img src="img/rabota1.jpg" class="col-lg-4 col-md-4 img-thumbnail"></a></div>
+                <div><a href="img/rabota2.jpg" class="item-library"><img src="img/rabota2.jpg" class="col-lg-4 col-md-4 img-thumbnail"></a></div>
+                <div><a href="img/rabota3.jpg" class="item-library"><img src="img/rabota3.jpg" class="col-lg-4 col-md-4 img-thumbnail"></a></div>
             </div>
             <div class="row col-lg-12 col-md-12">
-                <div><img src="img/rabota4.jpg" class="col-lg-4 col-md-4"></div>
-                <div><img src="img/rabota5.jpg" class="col-lg-4 col-md-4"></div>
-                <div><img src="img/rabota6.jpg" class="col-lg-4 col-md-4"></div>
+                <div><a href="img/rabota4.jpg" class="item-library"><img src="img/rabota4.jpg" class="col-lg-4 col-md-4 img-thumbnail"></a></div>
+                <div><a href="img/rabota5.jpg" class="item-library"><img src="img/rabota5.jpg" class="col-lg-4 col-md-4 img-thumbnail"></a></div>
+                <div><a href="img/rabota6.jpg" class="item-library"><img src="img/rabota6.jpg" class="col-lg-4 col-md-4 img-thumbnail"></a></div>
             </div>
         </div>
     </section>
     <section id="sec-3" class="row otzyvy well">
         <h4 class="name-block page-header">Отзывы</h4>
-        <div class="inner-about">
+        <div class="inner-otzyvy">
             <div class="well">
                 <span class="name-otzyvy lobster">Татьяна Лазарева</span> <span class="date-otzyvy">8 мая 2015 12.58</span>
                 <p>Спасибо за новый диван!!!</p>
@@ -298,19 +298,19 @@
             <div class="soc-seti col-lg-6 col-md-6">
                 <div class="vk col-md-6">
                     <span>Мы в контакте: </span>
-                    <a href="https://vk.com/chimichim"></a>
+                    <a href="https://vk.com/chimichim" target="_blank"></a>
                 </div>
                 <div class="fb col-md-6">
                     <span>Мы в фэйсбуке: </span>
-                    <a href="https://www.facebook.com/pages/Чистый-слон/4374308630.."></a>
+                    <a href="https://www.facebook.com/pages/%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B9-%D1%81%D0%BB%D0%BE%D0%BD/437430863094847" target="_blank"></a>
                 </div>
             </div>
-            <div class="phone col-lg-6 col-md-6">
-                <div class="mts col-md-6">
+            <div class="phone col-lg-6 col-md-6 col-sm-12">
+                <div class="mts col-md-6 col-sm-12">
                     <span></span>
                     <a href="tel:+375293853011">+375-29-709-74-34</a>
                 </div>
-                <div class="velcom col-md-6">
+                <div class="velcom col-md-6 col-sm-12">
                     <span></span>
                     <a href="tel:+375293853011">+375-29-385-30-11</a>
                 </div>
@@ -321,6 +321,7 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
 <script src="js/app.js"></script>

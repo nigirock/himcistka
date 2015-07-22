@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
     var page = $("a[rel='m_PageScroll2id']");
         page.mPageScroll2id({
-            offset:150
+            offset:140
         });
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -14,12 +14,15 @@ $( document ).ready(function() {
         nav:true,
         animateOut: 'fadeInRight',
         animateIn: 'fadeIn',
-        autoPlay:true,
+        autoPlay:false,
         stopOnHover:true,
         paginationSpeed : 2000,
         rewindSpeed : 1000,
         responsive:{
             0:{
+                items:1
+            },
+            768:{
                 items:1
             }
         }
@@ -34,4 +37,16 @@ $( document ).ready(function() {
         });
         return false;
         });
+    $(".item-library").magnificPopup({
+       type: "image",
+        gallery: {
+            enabled: true
+        },
+        mainClass: 'mfp-with-zoom',
+        zoom: {
+            enabled: true,
+            duration: 300,
+            easing: 'ease-in-out'
+        }
+    });
 });

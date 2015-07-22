@@ -1,6 +1,7 @@
 @import url("../css/owl.carousel.css");
 @import url("../css/owl.theme.css");
 @import url("../css/animate.css");
+@import url("../css/magnific-popup.css");
 @import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
 @font-face {
   font-family: RobotoSlabRegular;
@@ -24,11 +25,9 @@ header .navbar a {
   text-decoration: none;
 }
 header .navbar .brand {
-  padding-left: 0;
-}
-header .navbar .brand img {
   max-height: 95px;
   float: left;
+  padding-left: 10px;
 }
 header .navbar .header-name h1 {
   margin: 0;
@@ -50,6 +49,7 @@ header .navbar .navbar-toggle .icon-bar {
 }
 header .navbar .collapse {
   float: right;
+  margin-top: 20px;
 }
 header .navbar .nav {
   display: inline-block;
@@ -139,19 +139,24 @@ section {
   font-size: 30px;
 }
 /*==================================*/
+/*=============== library ==========*/
+.library img {
+  max-height: 316px;
+}
+/*==================================*/
 /*============= otzyvy ==============*/
 .otzyvy {
   background: #fff;
   margin-top: 28px;
 }
-.otzyvy .inner-about {
+.otzyvy .inner-otzyvy {
   margin-top: 20px;
 }
-.otzyvy .inner-about .name-otzyvy {
+.otzyvy .inner-otzyvy .name-otzyvy {
   font-size: 24px;
   padding-right: 25px;
 }
-.otzyvy .inner-about .date-otzyvy {
+.otzyvy .inner-otzyvy .date-otzyvy {
   font-size: 16px;
   font-weight: bold;
 }
@@ -269,6 +274,57 @@ section {
     text-align: left;
   }
   /*==================================*/
+  /* ============== header =============*/
+  header .navbar {
+    padding: 10px 0;
+    background: #494949;
+    box-shadow: 0px 0px 30px 0px #ffffff;
+  }
+  header .navbar a {
+    text-decoration: none;
+  }
+  header .navbar .brand {
+    max-height: 95px;
+    float: none;
+    padding-left: 10px;
+  }
+  header .navbar .header-name {
+    display: none;
+  }
+  header .navbar .navbar-toggle {
+    background-color: #199dcd;
+    margin-top: 30px;
+  }
+  header .navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  header .navbar .collapse {
+    float: none;
+    margin-top: 0px;
+    width: 100%;
+  }
+  header .navbar .nav {
+    display: block;
+    float: none;
+    padding-left: 0;
+  }
+  header .navbar .nav li {
+    display: block;
+    padding: 0 7px;
+  }
+  header .navbar .nav a {
+    font-size: 16px;
+    color: #b3b3b3;
+    line-height: 2;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  header .navbar .nav :hover {
+    border-radius: 0;
+  }
+  header .navbar .nav :focus {
+    border-radius: 0;
+  }
 }
 body {
   background: url("../img/bg-body.jpg") no-repeat center center fixed;
