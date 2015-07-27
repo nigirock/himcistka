@@ -10,11 +10,22 @@ section{
 .main{
   background: #fff;
   margin-top: 155px;
+  h1{
+    text-align: center;
+  }
   .owl-carousel{
     margin-top: 20px;
     img{
       height: 400px;
       width: 100%;
+    }
+    h2{
+      position: absolute;
+      bottom: 10px;
+      left: 25px;
+      font-size: 40px;
+      text-shadow: 2px 2px 2px #FFFDE6;
+      text-align: center;
     }
   }
   article{
@@ -116,7 +127,11 @@ img{
     a{
       padding-left: 90px;
       color: #000;
-    }
+    }:hover{
+    cursor: pointer;
+    color:#199dcd;
+    text-decoration: none;
+         }
     .mts{
       span{
         background: url("../img/mts-bank.png") no-repeat;
@@ -135,9 +150,30 @@ img{
         top: -15px;
       }
     }
-    .center-block{
-      width: 50%;
+    .skype{
+      span{
+        background: url("../img/skype.png") no-repeat;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: -15px;
+        font-size: 36px;
+      }
+      a{
+        padding-left: 70px;
+      }
     }
   }
 }
 /*==================================*/
+footer{
+  p{
+    margin: 0;
+  }
+  .ip{
+
+  }
+  .my{
+    float: right;
+  }
+}

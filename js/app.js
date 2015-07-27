@@ -1,6 +1,5 @@
 $( document ).ready(function() {
     var firstLi = $(".navbar-nav").children().first();
-    console.dir(firstLi);
 
     var page = $("a[rel='m_PageScroll2id']");
         page.mPageScroll2id({
