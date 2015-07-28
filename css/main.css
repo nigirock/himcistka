@@ -35,7 +35,12 @@ header .navbar a {
 header .navbar .brand {
   max-height: 95px;
   float: left;
-  padding-left: 10px;
+  padding: 20px 0 0 20px;
+  -webkit-transform: scale(1.8, 1.8);
+  -moz-transform: scale(1.8, 1.8);
+  -ms-transform: scale(1.8, 1.8);
+  -o-transform: scale(1.8, 1.8);
+  transform: scale(1.8, 1.8);
 }
 header .navbar .header-name {
   line-height: 0;
@@ -265,6 +270,7 @@ footer p {
 }
 footer .my {
   float: right;
+  color: #817b7b;
 }
 @media screen and (max-width: 1200px) {
   /*======== header =============*/
@@ -367,6 +373,11 @@ footer .my {
     max-height: 85px;
     float: left;
     padding-left: 10px;
+    -webkit-transform: scale(1.3, 1.8);
+    -moz-transform: scale(1.3, 1.8);
+    -ms-transform: scale(1.3, 1.8);
+    -o-transform: scale(1.3, 1.8);
+    transform: scale(1.3, 1.8);
   }
   header .navbar .header-name {
     line-height: 0;
@@ -460,8 +471,124 @@ footer .my {
     max-height: 197px;
   }
   /*==================================*/
+  /*============= contacts ==============*/
+  .contacts {
+    background: #fff;
+    margin-top: 28px;
+    padding: 25px;
+  }
+  .contacts .inner-contacts {
+    position: relative;
+    margin-top: 35px;
+  }
+  .contacts .inner-contacts .soc-seti a {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    opacity: 0.7;
+    top: -15px;
+    left: 135px;
+  }
+  .contacts .inner-contacts .soc-seti :hover {
+    opacity: 1;
+  }
+  .contacts .inner-contacts .soc-seti .vk {
+    padding-left: 15px;
+    text-align: left;
+  }
+  .contacts .inner-contacts .soc-seti .vk a {
+    left: 150px;
+  }
+  .contacts .inner-contacts .soc-seti .fb {
+    padding-left: 15px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .contacts .inner-contacts .soc-seti .fb a {
+    left: 150px;
+  }
+  .contacts .inner-contacts .soc-seti .od {
+    padding-left: 15px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .contacts .inner-contacts .soc-seti .od a {
+    left: 185px;
+  }
+  .contacts .phone {
+    padding: 15px 0 5px;
+  }
+  .contacts .phone a {
+    padding-left: 80px;
+    color: #000;
+  }
+  .contacts .phone :hover {
+    cursor: pointer;
+    color: #199dcd;
+    text-decoration: none;
+  }
+  .contacts .phone .mts {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .mts span {
+    background: url("../img/mts-bank.png") no-repeat;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: -15px;
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  .contacts .phone .velcom {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .velcom span {
+    background: url("../img/velcom_logo.png") no-repeat;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: -15px;
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+  .contacts .phone .skype {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .skype span {
+    background: url("../img/skype.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -15px;
+    font-size: 36px;
+  }
+  .contacts .phone .skype a {
+    padding-left: 70px;
+  }
+  /*==================================*/
+  footer {
+    text-align: center;
+  }
+  footer p {
+    margin: 0;
+  }
+  footer .my {
+    float: none !important;
+  }
 }
 @media screen and (max-width: 767px) {
+  .name-block {
+    text-align: center;
+  }
   /*============= price ==============*/
   .price {
     background: #fff;
@@ -475,6 +602,7 @@ footer .my {
   }
   .price table caption {
     font-size: 20px;
+    text-align: center;
   }
   .price table img {
     max-height: 140px;
@@ -485,7 +613,7 @@ footer .my {
     width: 50%;
   }
   .price table .price-table {
-    font-size: 18px;
+    font-size: 26px;
   }
   .price table .two-row {
     font-size: 14px;
@@ -501,16 +629,21 @@ footer .my {
     text-decoration: none;
   }
   header .navbar .brand {
-    max-height: 95px;
+    max-height: 55px;
     float: none;
-    padding-left: 10px;
+    padding: 14px 0 0 20px;
+    -webkit-transform: scale(2.8, 2.5);
+    -moz-transform: scale(2.8, 2.5);
+    -ms-transform: scale(2.8, 2.5);
+    -o-transform: scale(2.8, 2.5);
+    transform: scale(2.8, 2.5);
   }
   header .navbar .header-name {
     display: none;
   }
   header .navbar .navbar-toggle {
     background-color: #199dcd;
-    margin-top: 30px;
+    margin-top: 15px;
   }
   header .navbar .navbar-toggle .icon-bar {
     background-color: #fff;
@@ -546,8 +679,178 @@ footer .my {
     max-height: 197px;
   }
   /*==================================*/
+  /*============= contacts ==============*/
+  .contacts {
+    background: #fff;
+    margin-top: 28px;
+    padding: 25px;
+  }
+  .contacts .inner-contacts {
+    position: relative;
+    margin-top: 35px;
+  }
+  .contacts .inner-contacts .soc-seti a {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    opacity: 0.7;
+    top: -15px;
+    left: 135px;
+  }
+  .contacts .inner-contacts .soc-seti :hover {
+    opacity: 1;
+  }
+  .contacts .inner-contacts .soc-seti .vk {
+    padding: 0;
+    text-align: center;
+  }
+  .contacts .inner-contacts .soc-seti .vk a {
+    left: 65%;
+  }
+  .contacts .inner-contacts .soc-seti .fb {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .inner-contacts .soc-seti .fb a {
+    left: 65%;
+  }
+  .contacts .inner-contacts .soc-seti .od {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .inner-contacts .soc-seti .od a {
+    left: 70%;
+  }
+  .contacts .phone {
+    padding: 15px 0 5px;
+  }
+  .contacts .phone a {
+    padding-left: 90px;
+    color: #000;
+  }
+  .contacts .phone :hover {
+    cursor: pointer;
+    color: #199dcd;
+    text-decoration: none;
+  }
+  .contacts .phone .mts {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .mts span {
+    background: url("../img/mts-bank.png") no-repeat;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: -15px;
+  }
+  .contacts .phone .velcom {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .velcom span {
+    background: url("../img/velcom_logo.png") no-repeat;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: -15px;
+  }
+  .contacts .phone .skype {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .skype span {
+    background: url("../img/skype.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -15px;
+    font-size: 36px;
+  }
+  .contacts .phone .skype a {
+    padding-left: 70px;
+  }
+  /*==================================*/
 }
 @media screen and (max-width: 481px) {
+  /* ============== header =============*/
+  header .navbar {
+    padding: 0;
+  }
+  header .navbar .brand {
+    padding: 20px 0 0 20px;
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  header .navbar .header-name {
+    display: none;
+  }
+  header .navbar .navbar-toggle {
+    background-color: #199dcd;
+    margin-top: 10px;
+  }
+  header .navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  header .navbar .collapse {
+    float: none;
+    margin-top: 0px;
+    width: 100%;
+  }
+  header .navbar .nav {
+    display: block;
+    float: none;
+    padding-left: 0;
+  }
+  header .navbar .nav li {
+    display: block;
+    padding: 0 7px;
+  }
+  header .navbar .nav a {
+    font-size: 16px;
+    line-height: 2;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  header .navbar .nav :hover {
+    border-radius: 0;
+  }
+  header .navbar .nav :focus {
+    border-radius: 0;
+  }
+  /*============= main ==============*/
+  .main {
+    background: #fff;
+    margin-top: 110px;
+  }
+  .main h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+  .main .owl-carousel {
+    margin-top: 20px;
+  }
+  .main .owl-carousel img {
+    max-height: 200px;
+    width: 100%;
+  }
+  .main .owl-carousel h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #FFFDE6;
+    text-align: center;
+  }
+  .main article p {
+    text-indent: 20px;
+  }
+  /*==================================*/
   /*============= price ==============*/
   .price {
     background: #fff;
@@ -564,14 +867,135 @@ footer .my {
     max-height: 140px;
     text-align: center;
   }
-  .price table th {
+  .price table tr {
+    display: block;
+    border-bottom: 1px solid #959595;
+  }
+  .price table tr td {
+    border: none;
+  }
+  .price table tr th {
     display: block;
     margin: 0 auto;
     width: 100%;
+    border: none;
   }
   .price table .price-table {
     vertical-align: middle;
     font-size: 30px;
+  }
+  .price .media481 img {
+    display: none;
+  }
+  .price .media481 tr td {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+  /*==================================*/
+  /*=============== library ==========*/
+  .library img {
+    max-height: 100px;
+    min-height: 101px;
+  }
+  /*==================================*/
+  /*============= otzyvy ==============*/
+  .otzyvy .inner-otzyvy .date-otzyvy {
+    display: block;
+  }
+  /*==================================*/
+  /*============= contacts ==============*/
+  .contacts {
+    background: #fff;
+    margin-top: 28px;
+    padding: 25px;
+  }
+  .contacts .inner-contacts {
+    position: relative;
+    margin-top: 35px;
+  }
+  .contacts .inner-contacts .soc-seti a {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    opacity: 0.7;
+    top: -15px;
+    left: 135px;
+  }
+  .contacts .inner-contacts .soc-seti :hover {
+    opacity: 1;
+  }
+  .contacts .inner-contacts .soc-seti .vk {
+    padding: 0;
+    text-align: center;
+  }
+  .contacts .inner-contacts .soc-seti .vk a {
+    left: 75%;
+  }
+  .contacts .inner-contacts .soc-seti .fb {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .inner-contacts .soc-seti .fb a {
+    left: 75%;
+  }
+  .contacts .inner-contacts .soc-seti .od {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .inner-contacts .soc-seti .od a {
+    left: 80%;
+  }
+  .contacts .phone {
+    padding: 15px 0 5px;
+  }
+  .contacts .phone a {
+    padding-left: 90px;
+    color: #000;
+  }
+  .contacts .phone :hover {
+    cursor: pointer;
+    color: #199dcd;
+    text-decoration: none;
+  }
+  .contacts .phone .mts {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .mts span {
+    background: url("../img/mts-bank.png") no-repeat;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: -15px;
+  }
+  .contacts .phone .velcom {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .velcom span {
+    background: url("../img/velcom_logo.png") no-repeat;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: -15px;
+  }
+  .contacts .phone .skype {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contacts .phone .skype span {
+    background: url("../img/skype.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -15px;
+    font-size: 36px;
+  }
+  .contacts .phone .skype a {
+    padding-left: 70px;
   }
   /*==================================*/
 }

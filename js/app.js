@@ -1,10 +1,18 @@
 $( document ).ready(function() {
     var firstLi = $(".navbar-nav").children().first();
-
+    var widthScreen = $(window).width();
+    console.log(widthScreen);
     var page = $("a[rel='m_PageScroll2id']");
+    if(widthScreen <= 680){
+        page.mPageScroll2id({
+            offset:65
+        });
+    }else{
         page.mPageScroll2id({
             offset:120
         });
+    }
+
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items:1,
@@ -13,7 +21,7 @@ $( document ).ready(function() {
         nav:true,
         animateOut: 'fadeInRight',
         animateIn: 'fadeIn',
-        autoPlay:false,
+        autoPlay:true,
         stopOnHover:true,
         paginationSpeed : 2000,
         rewindSpeed : 1000,

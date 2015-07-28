@@ -1,4 +1,80 @@
 @media screen and (max-width: 481px){
+  /* ============== header =============*/
+  header{
+    .navbar{
+      padding: 0;
+      a{
+      }
+      .brand{
+        padding: 20px 0 0 20px;
+        .scale(1.5,1.5);
+      }
+      .header-name{
+        display: none;
+      }
+      .navbar-toggle{
+        background-color:  #199dcd;
+        margin-top: 10px;
+        .icon-bar{
+          background-color: #fff;
+        }
+      }
+      .collapse{
+        float: none;
+        margin-top: 0px;
+        width: 100%;
+      }
+      .nav{
+        display:block;
+        float: none;
+        padding-left: 0;
+        li{
+          display: block;
+          padding: 0 7px;
+        }
+        a{
+          font-size: 16px;
+          line-height: 2;
+          padding: 10px 20px;
+          text-align: center;
+        }:hover{
+           border-radius: 0;
+         }:focus{
+            border-radius: 0;
+          }
+      }
+    }
+  }
+  /*============= main ==============*/
+  .main{
+    background: #fff;
+    margin-top: 110px;
+    h1{
+      text-align: center;
+      font-size: 26px;
+    }
+    .owl-carousel{
+      margin-top: 20px;
+      img{
+        max-height: 200px;
+        width: 100%;
+      }
+      h2{
+        position: absolute;
+        bottom: 10px;
+        left: 25px;
+        font-size: 20px;
+        text-shadow: 2px 2px 2px #FFFDE6;
+        text-align: center;
+      }
+    }
+    article{
+      p{
+        text-indent: 20px;
+      }
+    }
+  }
+  /*==================================*/
   /*============= price ==============*/
   .price{
     background: #fff;
@@ -13,14 +89,149 @@
         max-height: 140px;
         text-align: center;
       }
-      th{
+      tr{
         display: block;
-        margin: 0 auto;
-        width: 100%;
+        border-bottom: 1px solid #959595;
+        td{
+          border: none;
+        }
+        th{
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          border: none;
+        }
       }
       .price-table{
         vertical-align: middle;
         font-size: 30px;
+      }
+    }
+    .media481{
+      img{
+        display: none;
+      }
+      tr{
+        td{
+          font-size: 20px;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  /*==================================*/
+  /*=============== library ==========*/
+  .library{
+    img{
+      max-height: 100px;
+      min-height: 101px;
+    }
+  }
+  /*==================================*/
+  /*============= otzyvy ==============*/
+  .otzyvy{
+    .inner-otzyvy{
+      .name-otzyvy{
+      }
+      .date-otzyvy{
+        display: block;
+      }
+    }
+  }
+  /*==================================*/
+  /*============= contacts ==============*/
+  .contacts{
+    background: #fff;
+    margin-top: 28px;
+    padding: 25px;
+    .inner-contacts{
+      position: relative;
+      margin-top: 35px;
+      .soc-seti{
+        span{
+        }
+        a{
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          opacity: 0.7;
+          top: -15px;
+          left: 135px;
+        }:hover{
+           opacity: 1;
+         }
+        .vk{
+          padding: 0;
+          text-align: center;
+          a{
+            left: 75%;
+          }
+        }
+        .fb{
+          padding: 0;
+          margin-top: 50px;
+          text-align: center;
+          a {
+            left: 75%;
+          }
+        }
+        .od{
+          padding: 0;
+          margin-top: 50px;
+          text-align: center;
+          a {
+            left: 80%;
+          }
+        }
+      }
+    }
+    .phone{
+      padding: 15px 0 5px;
+      a{
+        padding-left: 90px;
+        color: #000;
+      }:hover{
+         cursor: pointer;
+         color:#199dcd;
+         text-decoration: none;
+       }
+      .mts{
+        margin-top: 50px;
+        text-align: center;
+        span{
+          background: url("../img/mts-bank.png") no-repeat;
+          height: 50px;
+          width: 80px;
+          position: absolute;
+          top: -15px;
+        }
+      }
+      .velcom{
+        margin-top: 50px;
+        text-align: center;
+        span{
+          background: url("../img/velcom_logo.png") no-repeat;
+          height: 50px;
+          width: 80px;
+          position: absolute;
+          top: -15px;
+        }
+      }
+      .skype{
+        margin-top: 50px;
+        text-align: center;
+        span{
+          background: url("../img/skype.png") no-repeat;
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          top: -15px;
+          font-size: 36px;
+        }
+        a{
+          padding-left: 70px;
+        }
       }
     }
   }

@@ -1,4 +1,7 @@
 @media screen and (max-width: 767px){
+  .name-block{
+    text-align: center;
+  }
   /*============= price ==============*/
   .price{
     background: #fff;
@@ -10,6 +13,7 @@
       width: 100%;
       caption{
         font-size: 20px;
+        text-align: center;
       }
       td{
 
@@ -23,7 +27,7 @@
         width: 50%;
       }
       .price-table{
-        font-size: 18px;
+        font-size: 26px;
       }
       .two-row{
         font-size: 14px;
@@ -41,16 +45,17 @@
         text-decoration: none;
       }
       .brand{
-        max-height: 95px;
+        max-height: 55px;
         float: none;
-        padding-left: 10px;
+        padding: 14px 0 0 20px;
+        .scale(2.8,2.5);
       }
       .header-name{
         display: none;
       }
       .navbar-toggle{
         background-color:  #199dcd;
-        margin-top: 30px;
+        margin-top: 15px;
         .icon-bar{
           background-color: #fff;
         }
@@ -88,5 +93,100 @@
     }
   }
   /*==================================*/
-
+  /*============= contacts ==============*/
+  .contacts{
+    background: #fff;
+    margin-top: 28px;
+    padding: 25px;
+    .inner-contacts{
+      position: relative;
+      margin-top: 35px;
+      .soc-seti{
+        span{
+        }
+        a{
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          opacity: 0.7;
+          top: -15px;
+          left: 135px;
+        }:hover{
+           opacity: 1;
+         }
+        .vk{
+          padding: 0;
+          text-align: center;
+          a{
+            left: 65%;
+          }
+        }
+        .fb{
+          padding: 0;
+          margin-top: 50px;
+          text-align: center;
+          a {
+            left: 65%;
+          }
+        }
+        .od{
+          padding: 0;
+          margin-top: 50px;
+          text-align: center;
+          a {
+            left: 70%;
+          }
+        }
+      }
+    }
+    .phone{
+      padding: 15px 0 5px;
+      a{
+        padding-left: 90px;
+        color: #000;
+      }:hover{
+         cursor: pointer;
+         color:#199dcd;
+         text-decoration: none;
+       }
+      .mts{
+        margin-top: 50px;
+        text-align: center;
+        span{
+          background: url("../img/mts-bank.png") no-repeat;
+          height: 50px;
+          width: 80px;
+          position: absolute;
+          top: -15px;
+        }
+      }
+      .velcom{
+        margin-top: 50px;
+        text-align: center;
+        span{
+          background: url("../img/velcom_logo.png") no-repeat;
+          height: 50px;
+          width: 80px;
+          position: absolute;
+          top: -15px;
+        }
+      }
+      .skype{
+        margin-top: 50px;
+        text-align: center;
+        span{
+          background: url("../img/skype.png") no-repeat;
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          top: -15px;
+          font-size: 36px;
+        }
+        a{
+          padding-left: 70px;
+        }
+      }
+    }
+  }
+  /*==================================*/
 }
