@@ -27,7 +27,8 @@ header .navbar {
   background: -ms-linear-gradient(top, #b4e391 0%, #61c419 50%, #b4e391 100%);
   background: linear-gradient(to bottom, #b4e391 0%, #61c419 50%, #b4e391 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4e391', endColorstr='#b4e391', GradientType=0);
-  box-shadow: 0px 0px 30px 0px #ffffff;
+  -webkit-box-shadow: 0 0 10px #666666;
+  box-shadow: 0 0 10px #666666;
 }
 header .navbar a {
   text-decoration: none;
@@ -41,6 +42,7 @@ header .navbar .brand {
   -ms-transform: scale(1.8, 1.8);
   -o-transform: scale(1.8, 1.8);
   transform: scale(1.8, 1.8);
+  z-index: 100;
 }
 header .navbar .header-name {
   line-height: 0;
@@ -48,13 +50,17 @@ header .navbar .header-name {
 header .navbar .header-name h1 {
   margin: 0;
   text-align: center;
-  text-shadow: -2px 0px 15px #000000;
+  -webkit-text-shadow: 1px 1px 2px #000000;
+  -moz-text-shadow: 1px 1px 2px #000000;
+  text-shadow: 1px 1px 2px #000000;
   color: #199dcd;
 }
 header .navbar .header-name h2 {
   margin: 0;
   text-align: right;
-  text-shadow: -2px 0px 15px #000000;
+  -webkit-text-shadow: 1px 1px 2px #000000;
+  -moz-text-shadow: 1px 1px 2px #000000;
+  text-shadow: 1px 1px 2px #000000;
   color: #199dcd;
 }
 header .navbar .navbar-toggle {
@@ -65,7 +71,7 @@ header .navbar .navbar-toggle .icon-bar {
 }
 header .navbar .collapse {
   float: right;
-  margin-top: 10px;
+  margin-top: 15px;
   padding-left: 15px;
 }
 header .navbar .nav {
@@ -77,41 +83,41 @@ header .navbar .nav li {
   display: inline-block;
   padding: 0 7px;
 }
+header .navbar .nav li :hover {
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 10px #fafafa;
+  box-shadow: 0 0 10px #fafafa;
+  color: #212121;
+  background: #b3dced;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzZGNlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5YjhlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2UwZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b3dced), color-stop(50%, #29b8e5), color-stop(100%, #bce0ee));
+  background: -webkit-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -o-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -ms-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: linear-gradient(to bottom, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=0);
+}
+header .navbar .nav li :focus {
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 10px #fafafa;
+  box-shadow: 0 0 10px #fafafa;
+  color: #212121;
+  background: #b3dced;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzZGNlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5YjhlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2UwZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b3dced), color-stop(50%, #29b8e5), color-stop(100%, #bce0ee));
+  background: -webkit-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -o-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -ms-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: linear-gradient(to bottom, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=0);
+}
 header .navbar .nav a {
   font-size: 16px;
   color: #222;
   line-height: 2;
   padding: 10px 20px;
-}
-header .navbar .nav :hover {
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-  box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-  color: #212121;
-  background: #b3dced;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzZGNlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5YjhlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2UwZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b3dced), color-stop(50%, #29b8e5), color-stop(100%, #bce0ee));
-  background: -webkit-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: -o-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: -ms-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: linear-gradient(to bottom, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=0);
-}
-header .navbar .nav :focus {
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-  box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-  color: #212121;
-  background: #b3dced;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzZGNlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5YjhlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2UwZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b3dced), color-stop(50%, #29b8e5), color-stop(100%, #bce0ee));
-  background: -webkit-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: -o-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: -ms-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  background: linear-gradient(to bottom, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=0);
 }
 section {
   padding: 10px;
@@ -141,7 +147,9 @@ section {
   bottom: 10px;
   left: 25px;
   font-size: 40px;
-  text-shadow: 2px 2px 2px #FFFDE6;
+  -webkit-text-shadow: 1px 1px 2px #000000;
+  -moz-text-shadow: 1px 1px 2px #000000;
+  text-shadow: 1px 1px 2px #000000;
   text-align: center;
 }
 .main article p {
@@ -274,82 +282,33 @@ footer .my {
 }
 @media screen and (max-width: 1200px) {
   /*======== header =============*/
-  header .navbar {
-    box-shadow: 0px 0px 30px 0px #ffffff;
-  }
-  header .navbar a {
-    text-decoration: none;
-  }
   header .navbar .brand {
-    max-height: 95px;
-    float: left;
     padding-left: 10px;
   }
-  header .navbar .header-name {
-    line-height: 0;
-  }
   header .navbar .header-name h1 {
-    margin: 0;
-    text-align: center;
-    text-shadow: -2px 0px 15px #000000;
-    color: #199dcd;
     float: left;
   }
   header .navbar .header-name h2 {
-    margin: 0;
-    text-align: right;
-    text-shadow: -2px 0px 15px #000000;
-    color: #199dcd;
     float: left;
     line-height: 1.5;
     padding-left: 10px;
   }
   header .navbar .collapse {
     float: none;
-    margin-top: 10px;
   }
   header .navbar .nav {
     display: inline-block;
     float: none;
   }
-  header .navbar .nav li {
-    display: inline-block;
-    padding: 0 7px;
-  }
   header .navbar .nav a {
-    font-size: 16px;
-    line-height: 2;
     padding: 5px 15px;
   }
-  header .navbar .nav :hover {
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    color: #212121;
-  }
-  header .navbar .nav :focus {
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    color: #212121;
-  }
   /*============= price ==============*/
-  .price {
-    background: #fff;
-    margin-top: 28px;
-  }
-  .price table {
-    width: 100%;
-  }
   .price table caption {
     font-size: 26px;
   }
   .price table img {
     max-height: 200px;
-    text-align: left;
-  }
-  .price table th {
-    text-align: center;
   }
   .price table .price-table {
     font-size: 22px;
@@ -359,81 +318,21 @@ footer .my {
   }
   /*==================================*/
   /*=============== library ==========*/
-  .library img {
-    max-height: 197px;
-  }
   /*==================================*/
 }
 @media screen and (max-width: 991px) {
   /*======== header =============*/
-  header .navbar a {
-    text-decoration: none;
-  }
   header .navbar .brand {
     max-height: 85px;
-    float: left;
-    padding-left: 10px;
     -webkit-transform: scale(1.3, 1.8);
     -moz-transform: scale(1.3, 1.8);
     -ms-transform: scale(1.3, 1.8);
     -o-transform: scale(1.3, 1.8);
     transform: scale(1.3, 1.8);
   }
-  header .navbar .header-name {
-    line-height: 0;
-  }
-  header .navbar .header-name h1 {
-    margin: 0;
-    text-align: center;
-    text-shadow: -2px 0px 15px #000000;
-    color: #199dcd;
-    float: left;
-  }
-  header .navbar .header-name h2 {
-    margin: 0;
-    text-align: right;
-    text-shadow: -2px 0px 15px #000000;
-    color: #199dcd;
-    float: left;
-    line-height: 1.5;
-    padding-left: 10px;
-  }
-  header .navbar .collapse {
-    float: none;
-    margin-top: 10px;
-  }
-  header .navbar .nav {
-    display: inline-block;
-    float: none;
-  }
-  header .navbar .nav li {
-    display: inline-block;
-    padding: 0 7px;
-  }
-  header .navbar .nav a {
-    font-size: 16px;
-    line-height: 2;
-    padding: 5px 15px;
-  }
-  header .navbar .nav :hover {
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    color: #212121;
-  }
-  header .navbar .nav :focus {
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    box-shadow: 0px 0px 10px 4px rgba(250, 250, 250, 0.2);
-    color: #212121;
-  }
   /*============= main ==============*/
-  .main .owl-carousel {
-    margin-top: 20px;
-  }
   .main .owl-carousel img {
     max-height: 320px;
-    width: 100%;
   }
   .main .owl-carousel h2 {
     bottom: 10px;
@@ -455,9 +354,6 @@ footer .my {
   .price table img {
     max-height: 200px;
     text-align: left;
-  }
-  .price table th {
-    text-align: center;
   }
   .price table .price-table {
     font-size: 22px;
@@ -501,7 +397,7 @@ footer .my {
   }
   .contacts .inner-contacts .soc-seti .fb {
     padding-left: 15px;
-    margin-top: 0px;
+    margin-top: 0;
     text-align: left;
   }
   .contacts .inner-contacts .soc-seti .fb a {
@@ -509,7 +405,7 @@ footer .my {
   }
   .contacts .inner-contacts .soc-seti .od {
     padding-left: 15px;
-    margin-top: 0px;
+    margin-top: 0;
     text-align: left;
   }
   .contacts .inner-contacts .soc-seti .od a {
@@ -537,11 +433,7 @@ footer .my {
     width: 80px;
     position: absolute;
     top: -15px;
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+    /*.scale(0.8,0.8);*/
   }
   .contacts .phone .velcom {
     margin-top: 50px;
@@ -553,11 +445,7 @@ footer .my {
     width: 80px;
     position: absolute;
     top: -15px;
-    -webkit-transform: scale(0.8, 0.8);
-    -moz-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+    /*.scale(0.8,0.8);*/
   }
   .contacts .phone .skype {
     margin-top: 50px;
@@ -586,97 +474,79 @@ footer .my {
   }
 }
 @media screen and (max-width: 767px) {
+  /* ============== header =============*/
+  header .navbar {
+    padding: 10px 0;
+  }
+  header .navbar .brand {
+    max-height: 55px;
+    float: none;
+    padding: 14px 0 0 20px;
+    -webkit-transform: scale(2.5, 2.8);
+    -moz-transform: scale(2.5, 2.8);
+    -ms-transform: scale(2.5, 2.8);
+    -o-transform: scale(2.5, 2.8);
+    transform: scale(2.5, 2.8);
+    z-index: 100;
+  }
+  header .navbar .header-name {
+    display: none;
+  }
+  header .navbar .navbar-toggle {
+    margin-top: 15px;
+  }
+  header .navbar .collapse {
+    width: 100%;
+  }
+  header .navbar .nav {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header .navbar .nav li {
+    display: block;
+  }
+  header .navbar .nav li :hover {
+    border-radius: 0;
+  }
+  header .navbar .nav li :focus {
+    border-radius: 0;
+  }
+  header .navbar .nav a {
+    text-align: center;
+  }
+  /*===================================*/
   .name-block {
     text-align: center;
   }
   /*============= price ==============*/
-  .price {
-    background: #fff;
-    margin-top: 28px;
-  }
   .price h3 {
     font-size: 20px;
-  }
-  .price table {
-    width: 100%;
   }
   .price table caption {
     font-size: 20px;
     text-align: center;
   }
   .price table img {
-    max-height: 140px;
+    max-height: 100px;
     text-align: left;
   }
   .price table th {
-    text-align: center;
     width: 50%;
   }
   .price table .price-table {
-    font-size: 26px;
+    font-size: 20px;
   }
   .price table .two-row {
     font-size: 14px;
     text-align: left;
   }
   /*==================================*/
-  /* ============== header =============*/
-  header .navbar {
-    padding: 10px 0;
-    box-shadow: 0px 0px 30px 0px #ffffff;
-  }
-  header .navbar a {
-    text-decoration: none;
-  }
-  header .navbar .brand {
-    max-height: 55px;
-    float: none;
-    padding: 14px 0 0 20px;
-    -webkit-transform: scale(2.8, 2.5);
-    -moz-transform: scale(2.8, 2.5);
-    -ms-transform: scale(2.8, 2.5);
-    -o-transform: scale(2.8, 2.5);
-    transform: scale(2.8, 2.5);
-  }
-  header .navbar .header-name {
-    display: none;
-  }
-  header .navbar .navbar-toggle {
-    background-color: #199dcd;
-    margin-top: 15px;
-  }
-  header .navbar .navbar-toggle .icon-bar {
-    background-color: #fff;
-  }
-  header .navbar .collapse {
-    float: none;
-    margin-top: 0px;
-    width: 100%;
-  }
-  header .navbar .nav {
-    display: block;
-    float: none;
-    padding-left: 0;
-  }
-  header .navbar .nav li {
-    display: block;
-    padding: 0 7px;
-  }
-  header .navbar .nav a {
-    font-size: 16px;
-    line-height: 2;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  header .navbar .nav :hover {
-    border-radius: 0;
-  }
-  header .navbar .nav :focus {
-    border-radius: 0;
-  }
   /*=============== library ==========*/
   .library img {
-    max-height: 197px;
+    min-height: 150px;
+    max-height: 151px;
   }
   /*==================================*/
   /*============= contacts ==============*/
@@ -787,84 +657,35 @@ footer .my {
     -o-transform: scale(1.5, 1.5);
     transform: scale(1.5, 1.5);
   }
-  header .navbar .header-name {
-    display: none;
-  }
   header .navbar .navbar-toggle {
-    background-color: #199dcd;
     margin-top: 10px;
-  }
-  header .navbar .navbar-toggle .icon-bar {
-    background-color: #fff;
   }
   header .navbar .collapse {
     float: none;
-    margin-top: 0px;
-    width: 100%;
-  }
-  header .navbar .nav {
-    display: block;
-    float: none;
-    padding-left: 0;
-  }
-  header .navbar .nav li {
-    display: block;
-    padding: 0 7px;
-  }
-  header .navbar .nav a {
-    font-size: 16px;
-    line-height: 2;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  header .navbar .nav :hover {
-    border-radius: 0;
-  }
-  header .navbar .nav :focus {
-    border-radius: 0;
   }
   /*============= main ==============*/
   .main {
-    background: #fff;
     margin-top: 110px;
   }
   .main h1 {
-    text-align: center;
     font-size: 26px;
-  }
-  .main .owl-carousel {
-    margin-top: 20px;
   }
   .main .owl-carousel img {
     max-height: 200px;
-    width: 100%;
   }
   .main .owl-carousel h2 {
     position: absolute;
-    bottom: 10px;
-    left: 25px;
     font-size: 20px;
-    text-shadow: 2px 2px 2px #FFFDE6;
-    text-align: center;
   }
   .main article p {
     text-indent: 20px;
   }
   /*==================================*/
   /*============= price ==============*/
-  .price {
-    background: #fff;
-    margin-top: 28px;
-  }
-  .price table {
-    width: 100%;
-  }
   .price table caption {
     font-size: 30px;
-    text-align: center;
   }
   .price table img {
-    max-height: 140px;
     text-align: center;
   }
   .price table tr {
@@ -881,7 +702,6 @@ footer .my {
     border: none;
   }
   .price table .price-table {
-    vertical-align: middle;
     font-size: 30px;
   }
   .price .media481 img {
