@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
 <head>
     <title>Химчистка</title>
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<body ng-controller="mainBlockCtrl">
 <div class="container">
     <!-- =========header========== -->
     <header>
@@ -96,33 +96,12 @@
             <table class="table">
                 <caption>Химчистка диванов</caption>
                 <tbody>
-                <tr>
+                <tr ng-repeat="item in list.tableDivans">
                     <th align="center">
-                        <h3>Диван двухместный</h3>
-                        <img src="img/2divan.jpg" alt="divan2">
+                        <h3>{{item.name}}</h3>
+                        <img src={{item.photo}} alt="divans">
                     </th>
-                    <th class="price-table" align="center">от 150 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Диван трехместный</h3>
-                        <img src="img/3divan.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">от 250 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Диван четырехместный угловой</h3>
-                        <img src="img/4uglovoj.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">от 350 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Диван пятиместный угловой</h3>
-                        <img src="img/5uglovoj.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">от 430 000 руб</th>
+                    <th class="price-table" align="center">от {{item.price}} руб</th>
                 </tr>
                 <tr>
                     <th>
@@ -135,62 +114,13 @@
             <table class="table">
                 <caption>Химчистка мебели</caption>
                 <tbody>
-                <tr>
-                    <th align="center">
-                        <h3>Кресло</h3>
-                        <img src="img/kreslo-dom.jpg" alt="kreslo-dom">
-                    </th>
-                    <th class="price-table" align="center">80 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Кресло-кровать</h3>
-                        <img src="img/kreslo_krovat.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">100 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Пуф,банкетка</h3>
-                        <img src="img/puf.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">40 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Стул,табурет</h3>
-                        <img src="img/stul.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">60 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Стул компьютерный</h3>
-                        <img src="img/stul-computer.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">80 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Офисное кресло</h3>
-                        <img src="img/stul-office.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">100 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Подушка</h3>
-                        <img src="img/Podushka.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">20 000 - 30 000 руб</th>
-                </tr>
-                <tr>
-                    <th align="center">
-                        <h3>Кухонный уголок</h3>
-                        <img src="img/ugolok-kuhnja.jpg" alt="divan2">
-                    </th>
-                    <th class="price-table" align="center">150 000 руб</th>
-                </tr>
+                    <tr ng-repeat="item in list.tableFurniture">
+                        <th align="center">
+                            <h3>{{item.name}}</h3>
+                            <img src={{item.photo}} alt="furniture">
+                        </th>
+                        <th class="price-table" align="center">{{item.price}} руб</th>
+                    </tr>
                 </tbody>
             </table>
         <!--3 table-->
@@ -278,25 +208,9 @@
     <section id="sec-3" class="row otzyvy well">
         <h4 class="name-block page-header">Отзывы</h4>
         <div class="inner-otzyvy">
-            <div class="well">
-                <span class="name-otzyvy lobster">Татьяна Лазарева</span> <span class="date-otzyvy">8 мая 2015 в 12.58</span>
-                <p>Спасибо за новый диван!!!</p>
-            </div>
-            <div class="well">
-                <span class="name-otzyvy lobster">Ленка Титова</span> <span class="date-otzyvy">17 мая 2015 в 21:10</span>
-                <p>Отличная работа!!! Очень довольны. Мама думала диван перетягивать придется (после маленького ребенка). Теперь как новый!) СПАСИБО!!!</p>
-            </div>
-            <div class="well">
-                <span class="name-otzyvy lobster">Ирина Горбачева</span> <span class="date-otzyvy">23 июня в 21:40</span>
-                <p>Огромное спасибо, за чистку дивана и ковров, мы даже и не думали, что после маленького ребенка можно вернуть прежнюю чистоту, т. е. состояние нового.Мастера очень добросовестные и приятные в общении,даже проконсультировали.Работа выполнена на 100 баллов.Мы остались в восторге, всем рекомендуем.Еще раз огромное спасибо!!!!!!!!!!!!!!!!!!!!!</p>
-            </div>
-            <div class="well">
-                <span class="name-otzyvy lobster">Галина Малаш</span> <span class="date-otzyvy">12 июля 2015 в 21:03</span>
-                <p>Все очень здорово! Спасибо огромное, очень хорошо работают ваши мастера. СПАСИБО. В будущем планируют и дальше воспользоваться вашими услугами. Я даже перестановку сделала. Здорово что есть интернет и здорово, что вы нашлись мне</p>
-            </div>
-            <div class="well">
-                <span class="name-otzyvy lobster">Инна Трофимович</span> <span class="date-otzyvy">16 июля 2015 в 15:21</span>
-                <p>Хочу выразить огромную благодарность за химчистку дивана! мы выиграли в конкурсе,с нами быстро связались и приехали в удобное для нас время! Даже не ожидала,но после химчистки не осталось никаких запахов ! Все профессионально,быстро и качественно! Спасибо огромное!!!!Советую!</p>
+            <div class="well" ng-repeat="item in list.otzyvy">
+                <span class="name-otzyvy lobster">{{item.name}}</span><span class="date-otzyvy">{{item.date}}</span>
+                <p>{{item.text}}</p>
             </div>
             <!-- ===========form========================= -->
             <form class="form-horizontal form">
@@ -374,6 +288,7 @@
 </div>
 </body>
 <script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
