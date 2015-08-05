@@ -1,14 +1,15 @@
 $( document ).ready(function() {
+    var firstLi = $(".navbar-nav").children().first();
     var widthScreen = $(window).width();
     console.log(widthScreen);
     var page = $("a[rel='m_PageScroll2id']");
     if(widthScreen <= 680){
         page.mPageScroll2id({
-            offset:150
+            offset:65
         });
     }else{
         page.mPageScroll2id({
-            offset:135
+            offset:120
         });
     }
 
