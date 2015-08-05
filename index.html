@@ -130,18 +130,18 @@
             <tr>
                 <td rowspan="2"><img src="img/matras.jpg" alt="matras"></td>
                 <td colspan="2" align="right" class="price-table two-row">
-                    Матрас односпальный
+                    {{list.tableMatras[0].name}}
                 </td>
                 <td class="price-table two-row" align="center">
-                    150 000 руб
+                    {{list.tableMatras[0].price}} руб
                 </td>
             </tr>
             <tr>
                 <td colspan="2" align="right" class="price-table two-row">
-                    Матрас двуспальный
+                    {{list.tableMatras[1].name}}
                 </td>
                 <td class="price-table two-row" align="center">
-                    250 000 руб
+                    {{list.tableMatras[1].price}} руб
                 </td>
             </tr>
             </tbody>
@@ -153,26 +153,26 @@
                 <tr>
                     <td rowspan="3"><img src="img/him-covrow.jpg" alt="him"></td>
                     <td colspan="3" align="right" class="price-table two-row">
-                        Ковер с коротким ворсом
+                        {{list.tableCarpet[0].name}}
                     </td>
                     <td class="price-table two-row" align="center">
-                        30 000 руб за м<sup>2</sup>
+                        {{list.tableCarpet[0].price}} руб за м<sup>2</sup>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3" align="right" class="price-table two-row">
-                        Ковер с длинным ворсом
+                        {{list.tableCarpet[1].name}}
                     </td>
                     <td class="price-table two-row" align="center">
-                        35 000 руб за м<sup>2</sup>
+                        {{list.tableCarpet[1].price}} руб за м<sup>2</sup>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3" align="right" class="price-table two-row">
-                        Ковролин
+                        {{list.tableCarpet[2].name}}
                     </td>
                     <td class="price-table two-row" align="center">
-                        30 000 руб за м<sup>2</sup>
+                        {{list.tableCarpet[2].price}} руб за м<sup>2</sup>
                     </td>
                 </tr>
                 </tbody>
@@ -181,18 +181,12 @@
         <table class="table">
             <caption>Химчистка колясок</caption>
             <tbody>
-            <tr>
+            <tr ng-repeat="item in list.tablePram">
                 <th align="center">
-                    <h3>Коляска детская</h3>
-                    <img src="img/colyaska.jpg" alt="divan2">
+                    <h3>{{item.name}}</h3>
+                    <img src={{item.photo}} alt="divan2">
                 </th>
-                <th class="price-table" align="center">100 000 - 150 000 руб</th>
-            <tr>
-                <th align="center">
-                    <h3>Автокресло</h3>
-                    <img src="img/kreslo.jpg" alt="divan2">
-                </th>
-                <th class="price-table" align="center">100 000 - 150 000 руб</th>
+                <th class="price-table" align="center">{{item.price}} руб</th>
             </tr>
             <tr>
                 <th>
@@ -289,6 +283,7 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/angular.min.js"></script>
+<script src="js/model.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
