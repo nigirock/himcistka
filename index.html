@@ -130,18 +130,18 @@
             <tr>
                 <td rowspan="2"><img src="img/matras.jpg" alt="matras"></td>
                 <td colspan="2" align="right" class="price-table two-row">
-                    {{list.tableMatras[0].name}}
+                    {{list.tableMattress[0].name}}
                 </td>
                 <td class="price-table two-row" align="center">
-                    {{list.tableMatras[0].price}} руб
+                    {{list.tableMattress[0].price}} руб
                 </td>
             </tr>
             <tr>
                 <td colspan="2" align="right" class="price-table two-row">
-                    {{list.tableMatras[1].name}}
+                    {{list.tableMattress[1].name}}
                 </td>
                 <td class="price-table two-row" align="center">
-                    {{list.tableMatras[1].price}} руб
+                    {{list.tableMattress[1].price}} руб
                 </td>
             </tr>
             </tbody>
@@ -202,7 +202,7 @@
     <section id="sec-3" class="row otzyvy well">
         <h4 class="name-block page-header">Отзывы</h4>
         <div class="inner-otzyvy">
-            <div class="well" ng-repeat="item in list.otzyvy">
+            <div class="well" ng-repeat="item in list.comment">
                 <span class="name-otzyvy lobster">{{item.name}}</span><span class="date-otzyvy">{{item.date}}</span>
                 <p>{{item.text}}</p>
             </div>
