@@ -32,6 +32,7 @@ header .navbar {
 }
 header .navbar a {
   text-decoration: none;
+  outline: none;
 }
 header .navbar .brand {
   max-height: 95px;
@@ -211,29 +212,30 @@ section {
   position: relative;
   margin-top: 35px;
 }
-.contacts .inner-contacts .soc-seti a {
-  height: 50px;
+.contacts .inner-contacts .soc-seti span {
   width: 50px;
+  height: 50px;
   position: absolute;
-  opacity: 0.7;
   top: -15px;
-  left: 135px;
 }
-.contacts .inner-contacts .soc-seti :hover {
-  opacity: 1;
+.contacts .inner-contacts .soc-seti a {
+  padding-left: 90px;
+  font-size: 20px;
 }
 .contacts .inner-contacts .soc-seti .vk {
   padding: 0;
 }
-.contacts .inner-contacts .soc-seti .vk a {
+.contacts .inner-contacts .soc-seti .vk span {
   background: url("../img/vk.png") no-repeat;
 }
-.contacts .inner-contacts .soc-seti .fb a {
+.contacts .inner-contacts .soc-seti .fb span {
   background: url("../img/fb.png") no-repeat;
 }
-.contacts .inner-contacts .soc-seti .od a {
+.contacts .inner-contacts .soc-seti .od span {
   background: url("../img/od.png") no-repeat;
-  left: 195px;
+}
+.contacts .inner-contacts .soc-seti .od a {
+  padding-left: 75px;
 }
 .contacts .phone {
   padding: 70px 0 25px;
@@ -377,39 +379,28 @@ footer .my {
     position: relative;
     margin-top: 35px;
   }
-  .contacts .inner-contacts .soc-seti a {
-    height: 50px;
+  .contacts .inner-contacts .soc-seti span {
     width: 50px;
+    height: 50px;
     position: absolute;
-    opacity: 0.7;
     top: -15px;
-    left: 135px;
+    left: 15px;
   }
-  .contacts .inner-contacts .soc-seti :hover {
-    opacity: 1;
+  .contacts .inner-contacts .soc-seti a {
+    padding-left: 80px;
+    font-size: 16px;
   }
   .contacts .inner-contacts .soc-seti .vk {
-    padding-left: 15px;
-    text-align: left;
+    padding: 0;
   }
-  .contacts .inner-contacts .soc-seti .vk a {
-    left: 150px;
+  .contacts .inner-contacts .soc-seti .fb span {
+    left: 30px;
   }
-  .contacts .inner-contacts .soc-seti .fb {
-    padding-left: 15px;
-    margin-top: 0;
-    text-align: left;
-  }
-  .contacts .inner-contacts .soc-seti .fb a {
-    left: 150px;
-  }
-  .contacts .inner-contacts .soc-seti .od {
-    padding-left: 15px;
-    margin-top: 0;
-    text-align: left;
+  .contacts .inner-contacts .soc-seti .od span {
+    left: 0;
   }
   .contacts .inner-contacts .soc-seti .od a {
-    left: 185px;
+    padding-left: 50px;
   }
   .contacts .phone {
     padding: 15px 0 5px;
@@ -433,7 +424,11 @@ footer .my {
     width: 80px;
     position: absolute;
     top: -15px;
-    /*.scale(0.8,0.8);*/
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
   }
   .contacts .phone .velcom {
     margin-top: 50px;
@@ -445,7 +440,11 @@ footer .my {
     width: 80px;
     position: absolute;
     top: -15px;
-    /*.scale(0.8,0.8);*/
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
   }
   .contacts .phone .skype {
     margin-top: 50px;
@@ -458,9 +457,10 @@ footer .my {
     position: absolute;
     top: -15px;
     font-size: 36px;
+    left: -4px;
   }
   .contacts .phone .skype a {
-    padding-left: 70px;
+    padding-left: 0;
   }
   /*==================================*/
   footer {
@@ -559,39 +559,39 @@ footer .my {
     position: relative;
     margin-top: 35px;
   }
-  .contacts .inner-contacts .soc-seti a {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    opacity: 0.7;
-    top: -15px;
-    left: 135px;
+  .contacts .inner-contacts .soc-seti {
+    text-align: center;
   }
-  .contacts .inner-contacts .soc-seti :hover {
-    opacity: 1;
+  .contacts .inner-contacts .soc-seti span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -15px;
+    left: inherit;
+  }
+  .contacts .inner-contacts .soc-seti a {
+    padding-left: 80px;
+    font-size: 20px;
   }
   .contacts .inner-contacts .soc-seti .vk {
     padding: 0;
-    text-align: center;
-  }
-  .contacts .inner-contacts .soc-seti .vk a {
-    left: 65%;
   }
   .contacts .inner-contacts .soc-seti .fb {
-    padding: 0;
     margin-top: 50px;
-    text-align: center;
+    padding: 0;
   }
-  .contacts .inner-contacts .soc-seti .fb a {
-    left: 65%;
+  .contacts .inner-contacts .soc-seti .fb span {
+    left: inherit;
   }
   .contacts .inner-contacts .soc-seti .od {
     padding: 0;
     margin-top: 50px;
-    text-align: center;
+  }
+  .contacts .inner-contacts .soc-seti .od span {
+    left: inherit;
   }
   .contacts .inner-contacts .soc-seti .od a {
-    left: 70%;
+    padding-left: 80px;
   }
   .contacts .phone {
     padding: 15px 0 5px;
@@ -638,6 +638,7 @@ footer .my {
     position: absolute;
     top: -15px;
     font-size: 36px;
+    left: 35%;
   }
   .contacts .phone .skype a {
     padding-left: 70px;
@@ -734,40 +735,6 @@ footer .my {
     position: relative;
     margin-top: 35px;
   }
-  .contacts .inner-contacts .soc-seti a {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    opacity: 0.7;
-    top: -15px;
-    left: 135px;
-  }
-  .contacts .inner-contacts .soc-seti :hover {
-    opacity: 1;
-  }
-  .contacts .inner-contacts .soc-seti .vk {
-    padding: 0;
-    text-align: center;
-  }
-  .contacts .inner-contacts .soc-seti .vk a {
-    left: 75%;
-  }
-  .contacts .inner-contacts .soc-seti .fb {
-    padding: 0;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .contacts .inner-contacts .soc-seti .fb a {
-    left: 75%;
-  }
-  .contacts .inner-contacts .soc-seti .od {
-    padding: 0;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .contacts .inner-contacts .soc-seti .od a {
-    left: 80%;
-  }
   .contacts .phone {
     padding: 15px 0 5px;
   }
@@ -813,6 +780,7 @@ footer .my {
     position: absolute;
     top: -15px;
     font-size: 36px;
+    left: 30%;
   }
   .contacts .phone .skype a {
     padding-left: 70px;
