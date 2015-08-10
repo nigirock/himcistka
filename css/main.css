@@ -419,11 +419,6 @@ footer .my {
     text-align: center;
   }
   .contacts .phone .mts span {
-    background: url("../img/mts-bank.png") no-repeat;
-    height: 50px;
-    width: 80px;
-    position: absolute;
-    top: -15px;
     -webkit-transform: scale(0.8, 0.8);
     -moz-transform: scale(0.8, 0.8);
     -ms-transform: scale(0.8, 0.8);
@@ -435,11 +430,6 @@ footer .my {
     text-align: center;
   }
   .contacts .phone .velcom span {
-    background: url("../img/velcom_logo.png") no-repeat;
-    height: 50px;
-    width: 80px;
-    position: absolute;
-    top: -15px;
     -webkit-transform: scale(0.8, 0.8);
     -moz-transform: scale(0.8, 0.8);
     -ms-transform: scale(0.8, 0.8);
@@ -451,12 +441,6 @@ footer .my {
     text-align: center;
   }
   .contacts .phone .skype span {
-    background: url("../img/skype.png") no-repeat;
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: -15px;
-    font-size: 36px;
     left: -4px;
   }
   .contacts .phone .skype a {
@@ -550,31 +534,14 @@ footer .my {
   }
   /*==================================*/
   /*============= contacts ==============*/
-  .contacts {
-    background: #fff;
-    margin-top: 28px;
-    padding: 25px;
-  }
-  .contacts .inner-contacts {
-    position: relative;
-    margin-top: 35px;
-  }
   .contacts .inner-contacts .soc-seti {
     text-align: center;
   }
   .contacts .inner-contacts .soc-seti span {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: -15px;
     left: inherit;
   }
   .contacts .inner-contacts .soc-seti a {
-    padding-left: 80px;
     font-size: 20px;
-  }
-  .contacts .inner-contacts .soc-seti .vk {
-    padding: 0;
   }
   .contacts .inner-contacts .soc-seti .fb {
     margin-top: 50px;
@@ -598,46 +565,8 @@ footer .my {
   }
   .contacts .phone a {
     padding-left: 90px;
-    color: #000;
-  }
-  .contacts .phone :hover {
-    cursor: pointer;
-    color: #199dcd;
-    text-decoration: none;
-  }
-  .contacts .phone .mts {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .contacts .phone .mts span {
-    background: url("../img/mts-bank.png") no-repeat;
-    height: 50px;
-    width: 80px;
-    position: absolute;
-    top: -15px;
-  }
-  .contacts .phone .velcom {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .contacts .phone .velcom span {
-    background: url("../img/velcom_logo.png") no-repeat;
-    height: 50px;
-    width: 80px;
-    position: absolute;
-    top: -15px;
-  }
-  .contacts .phone .skype {
-    margin-top: 50px;
-    text-align: center;
   }
   .contacts .phone .skype span {
-    background: url("../img/skype.png") no-repeat;
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: -15px;
-    font-size: 36px;
     left: 35%;
   }
   .contacts .phone .skype a {
@@ -735,55 +664,9 @@ footer .my {
     position: relative;
     margin-top: 35px;
   }
-  .contacts .phone {
-    padding: 15px 0 5px;
-  }
-  .contacts .phone a {
-    padding-left: 90px;
-    color: #000;
-  }
-  .contacts .phone :hover {
-    cursor: pointer;
-    color: #199dcd;
-    text-decoration: none;
-  }
-  .contacts .phone .mts {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .contacts .phone .mts span {
-    background: url("../img/mts-bank.png") no-repeat;
-    height: 50px;
-    width: 80px;
-    position: absolute;
-    top: -15px;
-  }
-  .contacts .phone .velcom {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .contacts .phone .velcom span {
-    background: url("../img/velcom_logo.png") no-repeat;
-    height: 50px;
-    width: 80px;
-    position: absolute;
-    top: -15px;
-  }
-  .contacts .phone .skype {
-    margin-top: 50px;
-    text-align: center;
-  }
   .contacts .phone .skype span {
-    background: url("../img/skype.png") no-repeat;
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: -15px;
     font-size: 36px;
     left: 30%;
-  }
-  .contacts .phone .skype a {
-    padding-left: 70px;
   }
   /*==================================*/
 }
