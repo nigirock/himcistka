@@ -12,30 +12,12 @@ $( document ).ready(function() {
         });
     }
 
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items:1,
-        margin:10,
-        loop:true,
-        nav:true,
-        animateOut: 'fadeInRight',
-        animateIn: 'fadeIn',
-        autoPlay:true,
-        stopOnHover:true,
-        paginationSpeed : 2000,
-        rewindSpeed : 1000,
-        responsive:{
-            0:{
-                items:1
-            },
-            768:{
-                items:1
-            },
-            991:{
-                items:1
-            }
-        }
+    $(".rslides").responsiveSlides({
+        auto: true,
+        speed: 2000,
+        timeout: 6000
     });
+
     var name = $("input[name='name']");
     var text = $("textarea[name='text']");
     console.dir(name);
