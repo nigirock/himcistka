@@ -32,7 +32,7 @@ $( document ).ready(function() {
             text.val("");
         });
         return false;
-        });
+    });
     $(".item-library").magnificPopup({
        type: "image",
         gallery: {
