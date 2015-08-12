@@ -1,7 +1,6 @@
 $( document ).ready(function() {
     var firstLi = $(".navbar-nav").children().first();
     var widthScreen = $(window).width();
-    console.log(widthScreen);
     var page = $("a[rel='m_PageScroll2id']");
     if(widthScreen <= 680){
         page.mPageScroll2id({
@@ -31,16 +30,24 @@ $( document ).ready(function() {
             },
             768:{
                 items:1
+            },
+            991:{
+                items:1
             }
         }
     });
+    var name = $("input[name='name']");
+    var text = $("textarea[name='text']");
+    console.dir(name);
     $(".form").submit(function(){
         $.ajax({
             type: "POST",
             url: "mail.php",
             data: $(this).serialize()
         }).done(function(){
-            alert("Thanks!");
+            alert("Спасибо за отзыв!");
+            name.val("");
+            text.val("");
         });
         return false;
         });

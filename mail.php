@@ -1,10 +1,11 @@
 <?php
+
 $recepient = "nigirock124@gmail.com";
-$sitename = "×èñòûé ñëîí";
+$sitename = "Ð§Ð¸ÑÑ‚Ñ‹Ð¹ ÑÐ»Ð¾Ð½";
 
 $name = trim($_POST["name"]);
 $text = trim($_POST["text"]);
-$message = "Èìÿ: $name \nÑîîáùåíèå: $text";
+$message = "Ð˜Ð¼Ñ: $name \nÐ¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ: $text";
 
-$pagetitle = "Íîâûé îòçûâ ñ ñàéòà";
+$pagetitle = "ÐÐ¾Ð²Ñ‹Ð¹ Ð¾Ñ‚Ð·Ñ‹Ð² Ñ ÑÐ°Ð¹Ñ‚Ð°";
 mail($recepient,$pagetitle,$message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
