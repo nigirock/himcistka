@@ -280,6 +280,9 @@ section {
 footer p {
   margin: 0;
 }
+footer .ip b {
+  margin-right: 30px;
+}
 footer .my {
   float: right;
   color: #817b7b;
